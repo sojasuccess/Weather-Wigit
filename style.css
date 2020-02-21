@@ -1,0 +1,509 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #283346;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+section {
+  background: #dfe7fa;
+  height: 95vh;
+  width: 85%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 85%;
+  height: 95%;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-align {
+  width: 95%;
+  height: 23rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: #bee;
+
+  background: url("/img/tedward-quinn--OgncmGp6zY-unsplash.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  border-radius: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__profile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 1rem;
+  margin-left: auto;
+  box-shadow: 0px 8px 15px 5px #e5e5f049;
+}
+
+.header__city-info {
+  margin: 4rem 8rem;
+  text-align: right;
+}
+
+.icon-location {
+  fill: #7768e5;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.header__continent-icon {
+  width: 10rem;
+}
+
+.div-aligner {
+  display: flex;
+  align-items: center;
+}
+
+.header-forcast {
+  background-color: #353688;
+  width: 8rem;
+  height: 15rem;
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+  border-radius: 0 2rem 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 8px 15px 5px #35368849;
+}
+
+.header__forcast {
+  height: calc(100% / 2);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0 2rem 2rem 1rem;
+  color: #fff;
+}
+
+.header__forcast--cloud {
+  background-color: #353688;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__forcast--cloud img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-top: -2.2rem;
+  flex: none;
+}
+
+.hum {
+  font-size: 0.9rem;
+  margin-top: -1.1rem;
+  color: #353688;
+}
+
+.cloud {
+  background-color: #fff;
+}
+
+.header__forcast--degree {
+  font-size: 3rem;
+  background-color: #353688;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__header {
+  margin: 2rem;
+}
+
+.days-forcast {
+  width: 15rem;
+}
+
+.daily__forcast {
+  background-color: #fff;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e8ed;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px 5px #e5e5ee5e;
+}
+
+.daily__forcast img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.daily__forcast p {
+  display: inline-block;
+}
+
+.weather-condition {
+  background-color: #e5e8ed;
+  /* padding: 1.8rem; */
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 1rem;
+}
+
+.daily__forcast--0 .weather-condition {
+  background-color: #7768e5;
+  color: #fff;
+}
+
+.daily__forcast--2 .weather-condition {
+  background-color: #e5e8ed;
+}
+/* 
+.places {
+  
+} */
+
+.places__location {
+  display: flex;
+  background: url("/img/sunyu-kim-Ioh49i3ozNI-unsplash.jpg") no-repeat center
+    center;
+  background-size: cover;
+  height: 74.65%;
+  width: 15.5rem;
+  /* margin: 1rem 0; */
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px 5px #e5e5ee5e;
+}
+
+.places__location .icon-location {
+  margin: 1rem;
+}
+
+.places__name {
+  margin: 1rem 0;
+}
+
+/* .reviews {
+
+} */
+
+.top-reviews {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 2rem 0;
+}
+
+.top-reviews .icon-stars {
+  width: 2rem;
+  height: 2rem;
+  fill: #7768e5e3;
+}
+
+.top-reviews p {
+  text-transform: capitalize;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.top-reviews img {
+  width: 1.5rem;
+  height: 1.58rem;
+  border-radius: 20%;
+}
+
+.cont {
+  background-color: #7768e5e3;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.reviews__content {
+  height: 16.6rem;
+}
+
+.time {
+  /* background: url('/img/sunyu-kim-Ioh49i3ozNI-unsplash.jpg') no-repeat center center; */
+  background-color: #353688;
+  /* background-size: cover; */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0px 8px 15px 5px #e5e5ee5e;
+}
+
+.time p:first-child {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+/* .art .icon-location {
+  fill: #fff;
+  width: 1.3rem;
+} */
+
+.fountain {
+  display: flex;
+  justify-content: center;
+  background: url("/img/tedward-quinn--OgncmGp6zY-unsplash.jpg") no-repeat
+    center center;
+  background-size: cover;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  box-shadow: 0px 8px 15px 5px #e5e5ee5e;
+}
+
+.fountain .icon-location {
+  fill: #fff;
+  width: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.fount-text {
+  margin-top: 1rem;
+  height: 2rem;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  background-color: #7768e5;
+  height: 12.5rem;
+  padding: 0 2rem;
+  margin-left: auto;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.city-forcast {
+  /* background-color: #bee; */
+  /* margin: 1rem; */
+  margin-top: -10rem;
+}
+
+.first-city {
+  width: 20rem;
+  background-color: #fff;
+  border: 1px solid #e5e8ed;
+  border-radius: 1.5rem;
+  height: 11rem;
+  box-shadow: 0px 8px 15px 5px #35368849;
+  margin: 1rem;
+}
+
+.oncast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.city__forcast--icon {
+  position: relative;
+  background-color: #dfe7fa;
+  width: 35%;
+  height: 6rem;
+  border-radius: 1.5rem;
+
+  /* padding: 2rem; */
+}
+
+.icon-6 {
+  width: 7rem;
+  fill: #353688;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 1rem 0 0 0;
+  /* color: gray; */
+}
+
+.city-forcast__info hr {
+  height: 2rem;
+}
+
+.deg {
+  display: flex;
+  /* align-items: center; */
+}
+
+.deg span {
+  color: #7768e5;
+  font-size: 1.5rem;
+}
+
+.deg p {
+  font-size: 2.5rem;
+}
+
+.loc p {
+  text-transform: capitalize;
+}
+
+.loc p {
+  font-size: 1.5rem;
+}
+
+.loc span {
+  font-size: 1rem;
+  color: grey;
+}
+
+.first-city:last-child {
+  border: dashed #353688;
+  position: relative;
+}
+
+.search-city {
+  padding: 5px;
+  border-radius: 1.3rem;
+  background: #dfe7fa;
+  border: 0px solid #556699;
+  width: 12rem;
+  height: 2.7rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #353688;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  text-shadow: 0px 0px #000000;
+}
+
+.search-city form {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* display: none; */
+}
+
+.search-city input {
+  background-color: inherit;
+  border-radius: 1.3rem 0 0 1.3rem;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.form-class {
+  border: none;
+  padding: 0.6rem;
+  margin: 0 auto;
+  /* display: none; */
+}
+
+.search-city input:focus {
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.search-city button:hover {
+  background-color: #353688;
+  transition: all 0.3s;
+}
+
+.search-city button {
+  background-color: #353688de;
+  color: #fff;
+  border-radius: 0 1.3rem 1.3rem 0;
+  outline: none;
+  cursor: pointer;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.search-city button:focus {
+  outline: none;
+}
+
+.search-city input::-webkit-input-placeholder {
+  color: #353688;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.icon-pattaya-1 {
+  width: 8rem;
+  height: 7.5rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1440px) {
+  /* html {
+    font-size: 62.5%;
+  } */
+
+  .header-align {
+    margin: 0;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+  }
+
+  section {
+    width: inherit;
+    height: inherit;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+  .container {
+    width: 100%;
+  }
+}
